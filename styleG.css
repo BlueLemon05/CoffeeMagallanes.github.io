@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.oc{
+    height: 800px;
+}
+
+
+body{
+    background: url(imagesG/bkg.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+body h1{
+    margin-left: 300px;
+    margin-top: 50px;
+    font-size: 100px;
+    color: #242521;
+}
+
+body p{
+    margin-top: 80px;
+    margin-left: 500px;
+    font-size: 30px;
+    color: #14ff46;
+}
+
+
+#game{
+    
+    top: 0;
+    position: absolute;
+    padding: 200px 0 0 200px;
+    width: 88%;
+    height: 416px; 
+}
+
+#character {
+    width: 90px;
+    height: 200px;
+    position: relative;
+    left: 380px;
+    top: 220px;
+    background-image: url(imagesG/Frappe.png);
+    background-size: cover;
+}
+
+
+
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump{
+    0%{top: 220px;}
+    25%{top: 120px;
+        background-image: url(imagesG/Frappe%201.png);}
+    50%{top: 120px;
+        background-image: url(imagesG/Frappe.png);}
+    75%{top: 200px;
+        background-image: url(imagesG/Frappe%202.png);}
+    100%{top: 220px;}
+}
+
+
+
+#block{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 140px;
+    left: 1400px;
+    animation: block 1.5s infinite linear ;
+}
+
+#block img{
+    width: 80px;
+    height: 80px;
+    animation: block 1.5s infinite linear ;
+    
+}
+
+@keyframes block{
+    0%{left:1400;}
+    100%{left:200px;}
+}
+
+
+.buttons{
+   
+}
+
+#pg{
+    margin-left: 120px;
+    margin-right: 500px;
+    margin-top: 40px;
+    width: 150px;
+}
+#pg:hover {
+    animation: pg .5s infinite;
+}
+
+@keyframes pg{
+    0%{margin-top: 40px;}
+    50%{margin-top: 30px;}
+    100%{margin-top: 40px;}
+}
+
+#hm{
+    padding-left: 100px;
+    float: left;
+    width: 150px;
+    margin-top: 40px;
+}
+
+#hm:hover{
+    animation: pg .5s infinite;
+}
+
+#jmp{
+    padding-left: 150px;
+    float: left;
+    width: 400px;
+    margin-top: 70px;  
+}  
+
+
+@keyframes jmp{
+    0%{margin-top: 70px;}
+    50%{margin-top: 55px;}
+    100%{margin-top: 70px;}
+}
+
+
+#jmp:hover{
+    animation: jmp .5s infinite; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
